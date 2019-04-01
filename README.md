@@ -1,7 +1,7 @@
 # Calculator
 Calculator web app
 
-![preview](https://gyazo.com/763211b07e95f81a7633da7ffe653d5b)
+![preview](https://gyazo.com/763211b07e95f81a7633da7ffe653d5b.png | width=100)
 
 Set up css and html.
 added push animation and transitions. 
