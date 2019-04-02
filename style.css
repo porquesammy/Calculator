@@ -49,11 +49,11 @@ body {
     flex-direction: column;
 }
 
-#input-display {
+#equation-div {
     display: flex;
     align-self: flex-end;
     margin-right: 1.3rem;
-    margin-top:1rem;
+    margin-top: 1rem;
 }
 
 #equals {
@@ -87,7 +87,7 @@ button {
 }
 
 .pressed {
-    transform: scale(.85);
+    transform: scale(.85) translateY(5px);
 }
 
 .red {
