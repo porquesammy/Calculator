@@ -12,9 +12,7 @@
     <title>Calculator</title>
     <meta name="description" content="Calculator app">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
@@ -27,12 +25,12 @@
                 <div id="inner-output">
 
                     <div id="equation-div">
-                        <p id="equation-display">2x2</p>
+                        <p id="equation-display"> </p>
                     </div>
 
 
                     <div id="equals">
-                        <p class="equals-display">00</p>
+                        <p id="equals-display">0</p>
                     </div>
 
                 </div>
@@ -43,37 +41,37 @@
             <div id="button-layout">
                 <div class="row">
                     <button id="ac">AC</button>
+                    <button id="back-space">&#8592;</button>
                     <button id="plus-minus">+/-</button>
-                    <button id="percent">%</button>
-                    <button id="devide" class="red">/</button>
+                    <button id="divide" class="red calc-operator">/</button>
                 </div>
 
 
                 <div class="row">
-                    <button id="seven">7</button>
-                    <button id="eight">8</button>
-                    <button id="nine">9</button>
-                    <button id="multiply" class="red">*</button>
+                    <button id="seven" class="calc-number">7</button>
+                    <button id="eight" class="calc-number">8</button>
+                    <button id="nine" class="calc-number">9</button>
+                    <button id="multiply" class="red calc-operator">*</button>
                 </div>
 
                 <div class="row">
-                    <button id="four">4</button>
-                    <button id="five">5</button>
-                    <button id="six">6</button>
-                    <button id="subtract" class="red">-</button>
+                    <button id="four" class="calc-number">4</button>
+                    <button id="five" class="calc-number">5</button>
+                    <button id="six" class="calc-number">6</button>
+                    <button id="subtract" class="red calc-operator">-</button>
                 </div>
 
                 <div class="row">
-                    <button id="one">1</button>
-                    <button id="two">2</button>
-                    <button id="three">3</button>
-                    <button id="add" class="red">+</button>
+                    <button id="one" class="calc-number">1</button>
+                    <button id="two" class="calc-number">2</button>
+                    <button id="three" class="calc-number">3</button>
+                    <button id="add" class="red calc-operator">+</button>
                 </div>
 
                 <div class="row">
-                    <button id="zero">0</button>
+                    <button id="zero" class="calc-number">0</button>
                     <button id="decimal">.</button>
-                    <button id="enter" class="enter">Enter</button>
+                    <button id="enter" class="enter calc-operator">Enter</button>
                 </div>
             </div>
 
@@ -87,7 +85,7 @@
 
 
 
-    <script src="calculate.js" async defer></script>
+    <script src="assets/calculate.js" async defer></script>
 </body>
 
 </html>
