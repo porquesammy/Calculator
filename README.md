@@ -12,4 +12,10 @@ Drawn in sketch and layed out mostly with flexbox.
 Functionality is mostly taking advantage of eval method. 
 
 
+
+
+-TODOS:
+
+
+-Need to sanitize text that is getting passed onto eval();
 -Still testing edge cases looking for errors. 
