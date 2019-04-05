@@ -6,7 +6,10 @@ Calculator web app
 
 -Added calculator functions.
 
+
 Drawn in sketch and layed out mostly with flexbox. 
+
 Functionality is mostly taking advantage of eval function. 
+
 
 -Still testing edge cases looking for errors. 
