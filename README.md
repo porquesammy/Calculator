@@ -9,7 +9,7 @@ Calculator web app
 
 Drawn in sketch and layed out mostly with flexbox. 
 
-Functionality is mostly taking advantage of eval function. 
+Functionality is mostly taking advantage of eval method. 
 
 
 -Still testing edge cases looking for errors. 
