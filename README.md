@@ -14,8 +14,7 @@ Functionality is mostly taking advantage of eval method.
 <br/>
 <br/>
 <br/>
--TODOS:
-<br/>
+TODOS:
 <br/>
 -Need to sanitize text that is getting passed onto eval();
 <br/>
