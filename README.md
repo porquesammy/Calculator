@@ -1,23 +1,18 @@
 # Calculator
-Calculator web app
+Calculator web app <br/>
+Drawn in sketch and layed out with flexbox. <br/> 
+Functionality is mostly taking advantage of eval method. <br/><br/>
+<img src="https://i.gyazo.com/63d42d1939f338bfd90a11e559002c36.gif" alt="calculator demo" width="288"/><br/>
 
 
-<img src="https://i.gyazo.com/d158531e4fca7ffe8e1457f0b809d693.gif" alt="calculator functionality example" width="400"/>
-
--Added calculator functions.
-
-
-Drawn in sketch and layed out mostly with flexbox. 
-
-Functionality is mostly taking advantage of eval method. 
-<br/>
-<br/>
+<br/><br/>
+<a href="https://i.gyazo.com/d158531e4fca7ffe8e1457f0b809d693.gif">Old calc demo</a> <br/>
+-Added calculator functions.<br/>
+-changed enter to equals.<br/>
+-limited max displayed equals length to ten.<br/> 
+-changed equals button to png.<br/>
 <br/>
 <br/>
 TODOS:
 <br/>
--Need to sanitize text that is getting passed onto eval();
-<br/>
--Still testing edge cases looking for errors. 
-<br/>
-<br/>
+-need to raise the button up to be centered 
