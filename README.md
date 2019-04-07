@@ -13,3 +13,6 @@ Functionality is mostly taking advantage of eval method. <br/><br/>
 -changed equals button to .png<br/>
 -added prefixes to css<br/> 
 <br/>
+<br/>
+TODO:<br/>
+add keydown functionality<br/>
