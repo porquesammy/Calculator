@@ -1,5 +1,4 @@
 //jshint esversion:6
-
 const oneBtn = document.getElementById('one');
 const twoBtn = document.getElementById('two');
 const threeBtn = document.getElementById('three');
@@ -10,7 +9,6 @@ const sevenBtn = document.getElementById('seven');
 const eightBtn = document.getElementById('eight');
 const nineBtn = document.getElementById('nine');
 const zeroBtn = document.getElementById('zero');
-
 const addition = document.getElementById('add');
 const subtraction = document.getElementById('subtract');
 const multiply = document.getElementById('multiply');
@@ -18,18 +16,13 @@ const divide = document.getElementById('divide');
 const allClearBtn = document.getElementById('ac');
 const plusMinus = document.getElementById('plus-minus');
 const backSpace = document.getElementById('back-space');
-
 const decimal = document.getElementById('decimal');
 const equals = document.getElementById('equals');
-
-
 const calcNumbs = document.getElementsByClassName('calc-number');
 const calcOperators = document.getElementsByClassName('calc-operator');
-
 let button = document.querySelectorAll("button");
 const displayValueEl = document.getElementById('equals-display');
 let equationDisplay = document.getElementById('equation-display');
-
 let displayValue = '0';
 let pendingValue;
 let evalStringArr = [];
@@ -110,9 +103,6 @@ plusMinus.onclick = () => {
     update();
 };
 
-
-
-
 // calculation eval 
 const performEval = (clickObj) => {
     let operator = clickObj.target.innerText;
@@ -144,7 +134,7 @@ const performEval = (clickObj) => {
             equationDisplay.innerText = evalStringArr.join(" ");
             break;
 
-            case '/':
+        case '/':
             pendingValue = displayValue;
             displayValue = '0';
             displayValueEl.innerText = displayValue;
@@ -152,17 +142,16 @@ const performEval = (clickObj) => {
             evalStringArr.push(operator);
             equationDisplay.innerText = evalStringArr.join(" ");
             break;
-            
+
         default:
             break;
     }
 };
 
 let short = (evaluation) => {
-    let str = evaluation.toString().split('').slice(0,10).join("");
+    let str = evaluation.toString().split('').slice(0, 10).join("");
     return str;
 };
-
 
 equals.addEventListener('click', () => {
     evalStringArr.push(displayValue);
@@ -170,16 +159,10 @@ equals.addEventListener('click', () => {
     let shorten = short(evaluation);
     equationDisplay.innerText = evalStringArr.join(" ");
     displayValueEl.innerText = shorten;
-    evalStringArr = []; 
+    evalStringArr = [];
     return evaluation;
 });
 
 for (let i = 0; i < calcOperators.length; i++) {
     calcOperators[i].addEventListener('click', performEval, false);
 }
-
-
-
-
-
-
