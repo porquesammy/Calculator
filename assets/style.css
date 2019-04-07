@@ -72,7 +72,7 @@ body {
     margin-top: 1rem;
 }
 
-#equals {
+#equals-div {
     margin: auto;
     text-align: center;
     font-size: 2rem;
@@ -84,6 +84,17 @@ body {
     height: 2px;
     width: 85%;
 }
+
+#row-bottom{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
+#decimal{
+    margin-left: 5px;
+}
+
 
 #button-layout {
     display: flex;
@@ -114,14 +125,6 @@ button {
     color: rgb(255, 83, 83);
 }
 
-.enter {
-    font-family: 'Pacifico', cursive;
-    font-style: italic;
-    background: radial-gradient(at left, rgba(218, 57, 57, 0.9), rgb(255, 74, 74) 60%);
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.74);
-    border-radius: 15px;
-    width: 4.5rem;
-    font-size: 1rem;
-    margin: auto 12px;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+.equals {
+    padding-bottom: 5rem;
 }

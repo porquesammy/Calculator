@@ -20,7 +20,7 @@ const plusMinus = document.getElementById('plus-minus');
 const backSpace = document.getElementById('back-space');
 
 const decimal = document.getElementById('decimal');
-const enter = document.getElementById('enter');
+const equals = document.getElementById('equals');
 
 
 const calcNumbs = document.getElementsByClassName('calc-number');
@@ -152,20 +152,34 @@ const performEval = (clickObj) => {
             evalStringArr.push(operator);
             equationDisplay.innerText = evalStringArr.join(" ");
             break;
-
-            case 'Enter':
-            evalStringArr.push(displayValue);
-            let evaluation = eval(evalStringArr.join(" "));
-            equationDisplay.innerText = evalStringArr.join(" ");
-            displayValueEl.innerText = evaluation;
-            evalStringArr = []; 
-            break;
-
+            
         default:
-            console.log('Sorry, we are out of ');
+            break;
     }
 };
+
+let short = (evaluation) => {
+    let str = evaluation.toString().split('').slice(0,10).join("");
+    return str;
+};
+
+
+equals.addEventListener('click', () => {
+    evalStringArr.push(displayValue);
+    let evaluation = eval(evalStringArr.join(" "));
+    let shorten = short(evaluation);
+    equationDisplay.innerText = evalStringArr.join(" ");
+    displayValueEl.innerText = shorten;
+    evalStringArr = []; 
+    return evaluation;
+});
 
 for (let i = 0; i < calcOperators.length; i++) {
     calcOperators[i].addEventListener('click', performEval, false);
 }
+
+
+
+
+
+
