@@ -2,7 +2,7 @@
 Calculator web app <br/>
 Drawn in sketch and layed out with flexbox. <br/> 
 Functionality is mostly taking advantage of eval method. <br/><br/>
-<img src="https://i.gyazo.com/63d42d1939f338bfd90a11e559002c36.gif" alt="calculator demo" width="288"/><br/>
+<img src="https://i.gyazo.com/acf7005dfde643e098ba815ae8be4c41.gif" alt="calculator demo" width="320"/>
 
 
 <br/><br/>
